@@ -24,6 +24,9 @@
 		AE0C3A6917A020D500E640D8 /* ExampleSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE0C3A6817A020D500E640D8 /* ExampleSpec.mm */; };
 		AE0C3A6C17A020D600E640D8 /* Cedar-iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE0C3A6B17A020D600E640D8 /* Cedar-iOS.framework */; };
 		AE0C3A7217A0215C00E640D8 /* BDDAppDelegateSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AE0C3A7117A0215C00E640D8 /* BDDAppDelegateSpec.mm */; };
+		AEC9687D17A19F880093245B /* BDDRecipesViewControllerSpec.mm in Sources */ = {isa = PBXBuildFile; fileRef = AEC9687C17A19F880093245B /* BDDRecipesViewControllerSpec.mm */; };
+		AEC9688117A1A0B90093245B /* BDDRecipesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC9687F17A1A0B90093245B /* BDDRecipesViewController.m */; };
+		AEC9688217A1A0B90093245B /* BDDRecipesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEC9688017A1A0B90093245B /* BDDRecipesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +52,10 @@
 		AE0C3A6B17A020D600E640D8 /* Cedar-iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Cedar-iOS.framework"; path = "Frameworks/Cedar-iOS.framework"; sourceTree = "<group>"; };
 		AE0C3A6D17A020D600E640D8 /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
 		AE0C3A7117A0215C00E640D8 /* BDDAppDelegateSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BDDAppDelegateSpec.mm; sourceTree = "<group>"; };
+		AEC9687C17A19F880093245B /* BDDRecipesViewControllerSpec.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BDDRecipesViewControllerSpec.mm; sourceTree = "<group>"; };
+		AEC9687E17A1A0B90093245B /* BDDRecipesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDDRecipesViewController.h; sourceTree = "<group>"; };
+		AEC9687F17A1A0B90093245B /* BDDRecipesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDDRecipesViewController.m; sourceTree = "<group>"; };
+		AEC9688017A1A0B90093245B /* BDDRecipesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BDDRecipesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +119,9 @@
 			children = (
 				AE0C3A4917A0208800E640D8 /* BDDAppDelegate.h */,
 				AE0C3A4A17A0208800E640D8 /* BDDAppDelegate.m */,
+				AEC9687E17A1A0B90093245B /* BDDRecipesViewController.h */,
+				AEC9687F17A1A0B90093245B /* BDDRecipesViewController.m */,
+				AEC9688017A1A0B90093245B /* BDDRecipesViewController.xib */,
 				AE0C3A4117A0208800E640D8 /* Supporting Files */,
 			);
 			path = Recipes;
@@ -135,10 +145,11 @@
 			isa = PBXGroup;
 			children = (
 				AE0C3A6817A020D500E640D8 /* ExampleSpec.mm */,
+				AE0C3A7117A0215C00E640D8 /* BDDAppDelegateSpec.mm */,
+				AEC9687C17A19F880093245B /* BDDRecipesViewControllerSpec.mm */,
 				AE0C3A6A17A020D500E640D8 /* Rakefile */,
 				AE0C3A6B17A020D600E640D8 /* Cedar-iOS.framework */,
 				AE0C3A6317A020D500E640D8 /* Supporting Files */,
-				AE0C3A7117A0215C00E640D8 /* BDDAppDelegateSpec.mm */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -228,6 +239,7 @@
 				AE0C3A4D17A0208800E640D8 /* Default.png in Resources */,
 				AE0C3A4F17A0208800E640D8 /* Default@2x.png in Resources */,
 				AE0C3A5117A0208800E640D8 /* Default-568h@2x.png in Resources */,
+				AEC9688217A1A0B90093245B /* BDDRecipesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +276,7 @@
 			files = (
 				AE0C3A4717A0208800E640D8 /* main.m in Sources */,
 				AE0C3A4B17A0208800E640D8 /* BDDAppDelegate.m in Sources */,
+				AEC9688117A1A0B90093245B /* BDDRecipesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +286,7 @@
 			files = (
 				AE0C3A6917A020D500E640D8 /* ExampleSpec.mm in Sources */,
 				AE0C3A7217A0215C00E640D8 /* BDDAppDelegateSpec.mm in Sources */,
+				AEC9687D17A19F880093245B /* BDDRecipesViewControllerSpec.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +466,7 @@
 				AE0C3A7017A020D600E640D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

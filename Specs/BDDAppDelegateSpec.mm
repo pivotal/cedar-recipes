@@ -1,9 +1,11 @@
 #import "BDDAppDelegate.h"
+#import "BDDRecipesViewController.h"
 
 using namespace Cedar::Matchers;
 using namespace Cedar::Doubles;
 
 SPEC_BEGIN(BDDAppDelegateSpec)
+
 
 describe(@"BDDAppDelegate", ^{
     __block BDDAppDelegate *delegate; // 1.
@@ -18,7 +20,7 @@ describe(@"BDDAppDelegate", ^{
         });
         
         it(@"should display a table view", ^{
-            delegate.window.rootViewController should be_instance_of([UITableViewController class]); // 5.
+            delegate.window.rootViewController should be_instance_of([BDDRecipesViewController class]); // 5.
         });
     });
 });

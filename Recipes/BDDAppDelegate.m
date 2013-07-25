@@ -7,6 +7,7 @@
 //
 
 #import "BDDAppDelegate.h"
+#import "BDDRecipesViewController.h"
 
 @implementation BDDAppDelegate
 
@@ -14,6 +15,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // 1.
+    self.window.rootViewController = [[BDDRecipesViewController alloc] init];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
