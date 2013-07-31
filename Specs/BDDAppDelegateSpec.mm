@@ -19,7 +19,7 @@ describe(@"BDDAppDelegate", ^{
             [delegate application:nil didFinishLaunchingWithOptions:nil];
         });
         
-        it(@"should display a table view", ^{
+        it(@"should display recipes", ^{
             delegate.window.rootViewController should be_instance_of([BDDRecipesViewController class]); // 5.
         });
     });

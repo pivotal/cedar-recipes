@@ -42,10 +42,8 @@ describe(@"BDDRecipesViewController", ^{
             
             viewController.recipes = recipes;
             
-            UITableViewCell *cell = [[UITableViewCell alloc] init];
-            
             NSIndexPath *indexPath = [NSIndexPath indexPathForItem:0 inSection:0];
-            cell = [viewController tableView:viewController.tableView cellForRowAtIndexPath:indexPath];
+            UITableViewCell *cell = [viewController tableView:viewController.tableView cellForRowAtIndexPath:indexPath];
 
             cell.textLabel.text should equal(@"Hamburgers");
         });
