@@ -1,1 +1,0 @@
-../../../Cedar/Source/Headers/Project/Doubles/CedarDoubleImpl.h
