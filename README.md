@@ -10,7 +10,7 @@ test-driven iOS apps quick and easy. The framework provides a large library of
 [matchers](https://github.com/pivotal/cedar/wiki/Writing-specs#matchers) so you
 can start testing right away on a large collection of objects. If you are
 familiar with [RSpec](http://rspec.info/) or
-[Jasmine](http://pivotal.github.io/jasmine/) you will immediately recognize the
+[Jasmine](https://jasmine.github.io/) you will immediately recognize the
 syntax for writing tests. 
 
 ```
